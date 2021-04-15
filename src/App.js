@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Toggle from './Components/Toggle';
+import Text from './Components/Text';
+import { Maths } from './Components/Maths';
 
 function App() {
   return (
@@ -15,10 +18,21 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React and also some
+          Learn React
+        </a>
+
+        <a
+          className="App-link"
+          href="upjs.sk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          upjs
         </a>
       </header>
-
+      <Maths />
+      <Toggle />
+      <Text />
     </div>
   );
 }
