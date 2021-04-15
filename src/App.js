@@ -15,10 +15,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React and also some
         </a>
       </header>
-      
+
     </div>
   );
 }
