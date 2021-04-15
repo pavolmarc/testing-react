@@ -7,15 +7,15 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/upjs/i);
-  expect(linkElement).toBeInTheDocument();
-});
+// test('renders link', () => {
+//   render(<App />);
+//   const linkElement = screen.getByText(/upjs/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
 
-test('renders link', () => {
-  render(<App />);
-  const img = screen.getByAltText(/logo/i);
-  expect(img).toBeInTheDocument();
-});
+// test('renders link', () => {
+//   render(<App />);
+//   const img = screen.getByAltText(/logo/i);
+//   expect(img).toBeInTheDocument();
+// });
 
