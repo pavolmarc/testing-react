@@ -6,6 +6,6 @@ it('sums numbers', () => {
 });
 
 
-// it('generates random number up to', () => {
-//     expect(random(10)).toBeLessThan(10);
-//   });
+it('generates random number up to', () => {
+    expect(random(10)).toBeLessThan(10);
+  });

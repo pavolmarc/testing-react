@@ -10,21 +10,19 @@ it('renders component', () => {
     expect(text).toBeInTheDocument();
 });
 
+Enzyme.configure({ adapter: new Adapter() })
 
-
-// Enzyme.configure({ adapter: new Adapter() })
-
-// describe('Toggle', () => {
-//     const wrapper = shallow(<Toggle />);
-//     it('renders a button', () => {
-//       expect(wrapper.find('button')).toHaveLength(1);
-//     });
-//     it('check click once', () => {
-//       wrapper.find('button').simulate('click');
-//       expect(wrapper.find('button').text()).toEqual('Toggled');
-//     });
-//     it('chceck click again', () => {
-//       wrapper.find('button').simulate('click');
-//       expect(wrapper.find('button').text()).toEqual('Toggle');
-//     });
-//   })
+describe('Toggle', () => {
+    const wrapper = shallow(<Toggle />);
+    it('renders a button', () => {
+      expect(wrapper.find('button')).toHaveLength(1);
+    });
+    it('check click once', () => {
+      wrapper.find('button').simulate('click');
+      expect(wrapper.find('button').text()).toEqual('Toggled');
+    });
+    it('chceck click again', () => {
+      wrapper.find('button').simulate('click');
+      expect(wrapper.find('button').text()).toEqual('Toggle');
+    });
+  })
