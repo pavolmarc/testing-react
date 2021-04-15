@@ -1,14 +1,14 @@
-// import Text from './Components/Text.js';
-// import { render, screen } from '@testing-library/react';
-// import Enzyme, { shallow } from 'enzyme'
-// import Adapter from 'enzyme-adapter-react-16'
-// import Toggle from './Components/Toggle.js';
+import Text from './Components/Text.js';
+import { render, screen } from '@testing-library/react';
+import Enzyme, { shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import Toggle from './Components/Toggle.js';
 
-// it('renders component', () => {
-//     render(<Text />);
-//     const text = screen.getByText(/Sample text/i);
-//     expect(text).toBeInTheDocument();
-// });
+it('renders component', () => {
+    render(<Text />);
+    const text = screen.getByText(/Sample text/i);
+    expect(text).toBeInTheDocument();
+});
 
 
 
